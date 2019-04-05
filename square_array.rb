@@ -1,4 +1,5 @@
 def square_array(array)
-   array.each {|number| Math.sqrt(number) }
+  
+  array.each_with_object([]) { |i,arr| arr << i ** 2 }
   
 end
